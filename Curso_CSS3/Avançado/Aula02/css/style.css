@@ -1,0 +1,52 @@
+/*
+	// Textando...
+ul{
+	margin:0px;
+	padding:0px;
+	list-style-type:none; // Limpa a lista 
+}
+
+li {
+	width:300px;
+	padding:10px 20px;
+	background:url(../imagem/seta.png) no-repeat left center;
+}
+*/
+
+h1 {
+	color:orange;
+	text-shadow:1px 1px 1px #000;
+}
+
+ul {
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+}
+
+ul a {
+
+	width:200px;
+	height:40px;
+	color:#000;
+	text-indent:40px;
+	line-height:40px;
+	display:block;
+	text-decoration:none;
+	background:url(../imagem/menu.png) no-repeat left center;
+}
+
+a:hover {
+	color:#fff;
+	width:200px;
+	background-repeat:no-repeat;
+	background-position: right center; 
+}
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a {
+	color:#fff;
+	width:200px;
+	background-repeat:no-repeat;
+	background-position: right center; 
+}

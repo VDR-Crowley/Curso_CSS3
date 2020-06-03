@@ -1,0 +1,48 @@
+/*
+|--- Barra de Navegação Horizontal ---|
+*/
+
+h1 {
+	color:deepskyblue;
+	text-shadow:1px 1px 1px #000;
+}
+
+
+ul {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	width:720px;
+	float:left;
+	background:#159cb0 url(../imagem/fundo-horizontal.png) repeat-x;
+}
+
+ul li {
+	float:left;
+}
+
+ul a {
+	color:#fff;
+	display:block;
+	padding:0 2em;
+	line-height: 2.2em;
+	text-decoration: none;
+	background:url(../imagem/divisor.png) repeat-y;
+}
+
+ul .primeiro a {
+	background:none;
+}
+a:hover {
+	color:#085662;
+	background:#44cade;
+}
+
+#home #navegacao .home a,
+#sobre #navegacao .sobre a,
+#noticia #navegacao .noticias a,
+#parceiros #navegacao .parceiros a,
+#contato #navegacao .contato a {
+	color:#085662;
+	background:#44cade;
+}

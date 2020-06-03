@@ -1,0 +1,99 @@
+/*
+
+*** Seletor universal ***
+
+* {
+	border:1px solid blue;
+}
+//seleciona todos os elementos da pagina
+
+|----------------------------------------------------------|
+
+*** Seletor de texto ***
+ 
+h1 {
+	color:blue;
+	text-shadow: 1px 1px 12px black;
+}
+//Seleciona elementos pelo tipo
+
+|----------------------------------------------------------|
+
+*** Seletor de classes ***
+
+.estilo {
+	color:orange;
+	text-shadow:5px 5px 4px black;
+}
+//. Seleciona um atributo class 
+
+p.estilo {
+	color:pink;
+	padding:5px;
+	margin:5px;
+	text-shadow: 1px 1px 0px black;
+}
+// Seleciona elementos <P> que tenha class como atributo.
+
+|----------------------------------------------------------|
+
+*** Seleto por ID ***
+
+#principal {
+	color:slateblue;
+	font-family:Arial,sans-serif;
+	background-color:gray;
+	border:1px solid blue;
+	text-shadow: 1px 1px 1px black;
+}
+// # jogo da velha ou cerquilha repesenta o id
+// Seleciona o elemento cujo atributo seja id
+
+|----------------------------------------------------------|
+
+*** Seletor filho ***
+
+// Seleciona um tipo de elemento que estiver dentro
+// dentro de outro
+li>a {
+	color:orange;
+	text-decoration:none;
+}
+// Seleciona elementos <a> que estiverem dentro do <li>
+
+|----------------------------------------------------------|
+
+*** Seletor descendente ***
+
+p a {
+	color:teal;
+	font-style:italic;
+}
+// Seleciona elementos <a> que estejam dentro de <P> msm
+// Que estejam dentro de outro elemento <p> <span> <a>
+// O elemento a ainda vai ser descendente de <P>
+
+|---------------------------------------------------------|
+
+*** Seletor de irmão adjacente ***
+
+h1+p {
+	color:yellow;
+}
+// Seleciona o elemento P que estiver depois do H1
+// (Não seleciona outros P)
+
+|---------------------------------------------------------|
+
+*** Seletor de irmão geral ***
+
+h1~p {
+	color:red;
+}
+// Seleciona elemento que estiver depois de h1
+// msm que tenha mais de 1 pe, essa regra ainda seria
+// aplicada 
+
+|---------------------------------------------------------|
+
+*/
