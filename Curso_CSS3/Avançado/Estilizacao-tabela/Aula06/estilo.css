@@ -1,0 +1,64 @@
+body {
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+
+table {
+	width:600px;
+	float:left;
+	border-collapse:separate;
+}
+
+th, td {
+	padding:7px;
+}
+
+th {
+	text-transform: uppercase;
+	border-top:1px solid blue;
+	border-bottom:1px solid green;
+	text-align:left;
+	font-size:90%;
+	letter-spacing:0.1em;
+}
+
+
+tr.alternado {
+	background-color:#efefef;
+}
+
+tr:hover {
+	background-color:#c3e6e5;
+}
+
+.numeros {
+	text-align:right;
+}
+
+/* Segunda tabela*/
+
+div {
+	float:right;
+	position:absolute;
+	left:680px;
+}
+
+#tabela-livro {					/*collapse junta, separate separa*/
+	border-collapse:collapse; /* Seleciona o tipo da linha da borda*/
+}
+
+#tabela-livro th {
+	background-color:#BDBDBD;
+	text-transform:uppercase; /* transforma a letra em maiusculo */
+	border:1px solid #0B610B;
+	text-align:90%;
+	letter-spacing:0.1em; /* Espaço entre as letras */
+}
+
+
+#tabela-livro tr.alternativo {
+	background-color:#D8D8D8;
+}
+
+#tabela-livro tr:hover {
+	background:red;
+}

@@ -1,0 +1,119 @@
+/**/
+
+
+body {
+	font-family: "Trebuchet MS", helvetica, sans-serif;
+	background:#f2f2f2;
+}
+
+#conteiner {
+	width:90%;  /*:920px;*/
+	min-width:750px;
+	margin:0 auto;
+	background:#E0ECF8 url("imagem/coluna.png") repeat-y top left;
+}
+
+#marca {
+	width: 100%
+	height:200px;
+	background:#225992 url(imagem/cabecalho2.jpg) no-repeat center;
+	text-indent: -25px;
+	text-align:center;
+	line-height:200px;
+	min-width: 750px;
+}
+
+#marca h1{
+	color:#1C1C1C;
+	text-shadow: 2px 2px 1px black;
+}
+
+#marca h1 span{
+	color:#A9BCF5;
+}
+
+#conteudo {
+	width:75%;
+	float:right;
+}
+
+#conteudo-principal {
+	width:60%;
+	color:#1C1C1C;
+	float:left;
+	background: #E0ECF8;
+	margin-top:15px;
+	text-shadow:1px 1px 1px black;
+}
+/*
+#imagem {
+	width:90%;
+	overflow:hidden; //corta a imagem que passar do tamanho maximo
+	border:1px solid red;
+}
+*/
+img.img-imagem {
+	width:96%;
+	padding:2%;
+	max-width:600px;
+}
+
+#conteudo-secundario {
+	width:30%;
+	float:right;
+	color:#E6E6E6;
+	background:#225992;
+	text-shadow: 1px 1px 1px black;
+}
+#conteudo-secundario h1,
+#conteudo-secundario h2,
+#conteudo-secundario h3,
+#conteudo-secundario p {
+	padding-left:20px;
+	padding-right:20px;
+}
+
+#navegacao {
+	width:20%;
+	float:left;
+	background-color:#225992;
+}
+
+#navegacao ul {
+	margin:0px;
+	padding:0px;
+	list-style: none;
+}
+
+#navegacao li a {
+	color:#E6E6E6;
+	display:block;
+	padding:1em;
+	text-indent:10px;
+	line-height:10px;
+	text-decoration:none;
+	text-shadow: 1px 1px 1px black;
+}
+
+#navegacao a:hover {
+	color:#225992;
+	text-shadow: 1px 1px 1px black;
+	background:#0B173B;
+}
+
+#principal #navegacao .ativo a {
+	color:#225992;
+	text-shadow: 1px 1px 1px black;
+	background:#0B173B;
+}
+
+#rodape {
+	clear:both;
+	color:#E6E6E6;
+	background:#225992;
+	margin-top: 100px;
+	text-align:center;
+	text-indent:-25px;
+	padding:15px;
+	text-shadow: 1px 1px 1px black
+}
