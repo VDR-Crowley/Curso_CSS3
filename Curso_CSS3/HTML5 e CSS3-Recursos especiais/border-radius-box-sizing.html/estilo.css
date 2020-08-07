@@ -1,0 +1,42 @@
+
+* {
+	margin:0;
+	padding:0;
+}
+
+.caixa {
+	float: left;
+	width:300px;
+	height:300px;
+	padding:50px;
+	margin-top:10px;
+	margin-left:20px;
+	color:#111;
+	background-color:#7401DF;
+	/* Border-radius arredonda a bordas */
+	border-radius:20px 90px;
+	-moz-border-radius:20px 90px; /* -moz- para versões mais antigas do mozila*/
+	webkit-border-radius:20px 90px; /* webkit- para o google chrome  */
+}
+
+.caixa2 {
+	float:right;
+	margin-top:35px;
+	margin-right:500px;
+	color: #f1f1f1;
+	background-color:#A5DF00;
+	/*background-image:url(foto-desenho.jpg);*/
+	border-radius:150px;
+	/* box-sizing:border-box evita o crescimento por padding e manrem o tamanho*/
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	webkit-box-sizing:border-box;
+}
+
+h1 {
+	margin:5px 0;
+}
+p {
+	font-size:15px;
+	padding-bottom:10px;
+}

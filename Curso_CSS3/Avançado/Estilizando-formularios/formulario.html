@@ -7,7 +7,42 @@
 	</head>
 	<body>
 		<form>
-			
+			<h1>Estilizando formularios</h1>
+			<fieldset> <!--Forma uma linha -->
+				<legend>Detalhes para contato</legend> <!--Adiciona uma legenda para o fieldset-->
+				<div>
+					<label for="nome">Nome:</label>
+					<input type="text" name="nome" id="nome">
+				</div>
+				<div>
+					<label for="imail">E-mail:</label>
+					<input type="text" name="email" id="imail">
+				</div>
+				<div>
+					<label for="url">URL:</label>
+					<input type="text" name="url" id="url">
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Comentários</legend>
+				<div>
+					<label for="coment">Mensagem:</label>
+					<textarea name="coment" id="coment"></textarea>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Gostou da pagina</legend>
+				<div>
+					<label for="sim"></label>
+					<input class="radio" type="radio" name="sim" id="sim">Sim
+				</div>
+				<div>
+					<label for="nao"></label>
+					<input class="radio"type="radio" name="nao" id="nao">Não
+				</div>
+			</fieldset>
 		</form>
 	</body>
 </html>
