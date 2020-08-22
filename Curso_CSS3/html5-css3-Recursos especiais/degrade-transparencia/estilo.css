@@ -1,0 +1,28 @@
+#caixa {
+	float: left;
+	width: 500px ;
+	height: 500px ;
+	margin-left: 150px;
+	/*background: url("camera.png");*/
+	/*background: linear-gradient(to right, blue, red, orange); tambem pode usar em graus 80deg*/
+	/*background: linear-gradient(angle, color1, color2);*/
+	background:  repeating-linear-gradient();
+	background: radial-gradient(black, orange, violet);
+}
+
+#caixa h1 {
+	/* 	rgb são define 3 cores red green blue, e vai misturando para ter uma cor 0
+ 		background: rgb(218,112,214); 
+	*/
+	/*	O rgba permite colocar transparencia no ultimo parametro
+		background: rgba(218,112,214, 0.8); 
+	*/
+}
+
+#caixa2 {
+float: right;	
+	width: 500px;
+	height: 500px;
+	margin-right: 150px;
+	background: repeating-linear-gradient(violet, red 10%, blue 20%);  /*Repete as cores*/
+}
