@@ -1,0 +1,28 @@
+#caixa {
+	width: 450px;
+	height: 450px;
+	padding: 8px;
+	margin: 20px;
+	background: rgb(28,28,28);
+	box-shadow: 2px 2px 5px 10px rgba(28,28,28,0.9),
+	2px 2px 8px 14px rgba(0, 255, 0);
+}
+
+#caixa h1 {
+	font-size: 2.0em;
+	font-weight: 700;
+	font-family: "Nunito", sans-serif;
+	color:white;
+	text-shadow: 1px 1px 10px rgba(28,28,28,1), 
+	1px 1px 20px rgba(255 0 0 ),
+	1px 1px 40px rgba(0, 255, 0) ;
+}
+
+#caixa p {
+	font-size: 1.6em;
+	font-family: "Nunito", sans-serif;
+	color: rgb(255,255,255);
+	text-shadow: 0px 0px 5px rgba(28, 28, 28),
+	0px 0px 10px rgba(255, 255, 224),
+	0px 0px 30px rgba(255, 185, 15);
+}
