@@ -1,0 +1,14 @@
+#caixa{
+	width:300px;
+	height:300px;
+	background: red;
+	border-radius: 300px;
+}
+
+#caixa:hover {
+	width: 500px;
+	background: blue;
+	transform: rotate(180deg);
+	transition: all 2s ;
+}
+

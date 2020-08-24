@@ -1,0 +1,44 @@
+@keyframes animacao-caixa {
+	0% {
+		background: orange;
+		border-radius: 0;
+		left: 0;
+		top: 0;
+	}
+	25% {
+		background: red;
+		border-radius: 300px;
+		left: 200px;
+		top: 0px;
+	}
+	50%{
+		background: blue;
+		left: 200px;
+		top: 200px;
+	}
+	75% {
+		background: black;
+		left: 0;
+		top: 200px;
+	}
+	100% {
+		background: green;
+		top: 0;
+		left: 0;
+	}
+
+	/*from {  }
+	to {  }*/
+}
+
+#caixa {
+	width: 100px;
+	height: 100px;
+	margin: 40px;
+	position: relative;
+	animation-name: animacao-caixa;
+	animation-duration: 5s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}

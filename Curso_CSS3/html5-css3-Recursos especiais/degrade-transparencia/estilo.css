@@ -6,7 +6,6 @@
 	/*background: url("camera.png");*/
 	/*background: linear-gradient(to right, blue, red, orange); tambem pode usar em graus 80deg*/
 	/*background: linear-gradient(angle, color1, color2);*/
-	background:  repeating-linear-gradient();
 	background: radial-gradient(black, orange, violet);
 }
 
