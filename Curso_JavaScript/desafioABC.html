@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Desafio - JavaScript</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+
+		document.write('<h2>Desafio A B C inversão dos valores</h2>')
+		var a = 10
+		var b = 20
+		var c = null  // Variavel auxiliar utilizada na lógica
+
+		document.write('A: '+a+'<br>')
+		document.write('B: '+b+'<br>')
+		document.write('C: '+c+'<br><br>')
+
+		// lógica da inversão de valores de A e B
+		c = b // C vai receber o B
+		b = a // sobrepoe o valor de A no B
+		a = c // A vai receber p valor de C
+
+		c = null // C volta a ser null
+
+		// Inversão dos valores mostrando na pagina
+		document.write('A: '+a+'<br>')
+		document.write('B: '+b+'<br>')
+		document.write('C: '+c+'<br>')
+
+	</script>
+</body>
+</html>
