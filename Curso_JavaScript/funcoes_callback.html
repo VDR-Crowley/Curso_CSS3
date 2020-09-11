@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Funções de callback</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+
+		function artigoRecuperado(id, callbackArtigo, callbackErro) {
+			// Logica arquivo recuperado via protocolo http
+			if (true) {
+				callbackArtigo('Titulo do artigo', 'Descrição do arquivo')
+			}else {
+				callbackErro('Erro!')
+			}
+		}
+
+		var callbackArtigo = function(titulo, descricaoArtigo) {
+			document.write('<h1>'+titulo+'<h1>')
+			document.write('<hr>')
+			document.write('<p>'+descricaoArtigo+'</p>')
+		}
+
+		var callbackErro = function(erro) {
+			document.write('Erro!!!'+erro)
+		}
+
+		// função de callback é quando uma função é passada como argumento para outra função.
+		artigoRecuperado(1, callbackArtigo, callbackErro)
+
+	</script>
+</body>
+</html>
