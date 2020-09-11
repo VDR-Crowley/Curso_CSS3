@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercicio - Indice de massa muscular</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script>
+		// 1) Crie uma aplicação para efetuar o cálculo do índice de massa corporal: 
+
+		// Entrada de dados
+		var nome = prompt('Informe seu nome: ')
+		var altura = prompt('Informe sua altura em centimetro: ')
+		var peso = prompt('Informe seu peso: ')
+		
+		// Processamento
+		altura = parseFloat(altura)
+		peso = parseFloat(peso)
+
+		altura = altura / 100
+
+		var m = peso / (altura * altura)
+
+		var clas = ''
+
+		if ( m < 16) {
+			clas = 'Baixo peso muito grave'
+		} 
+		else if (m >= 16 && m <= 16.99) {
+			clas = 'Baixo peso grave'
+		} 
+		else if (m >= 17 && m <= 18.49) {
+			clas = 'Baixo peso'
+		} 
+		else if (m >= 18.50 && m <= 24.99) {
+			clas = 'Peso normal'
+		} 
+		else if (m >= 25 && m <= 29.99) {
+			clas = 'Sobrepeso'
+		} 
+		else if (m >= 30 && m <= 34.99) {
+			clas = 'Obesidade grau I'
+		} 
+		else if (m >= 35 && m <= 39.99) {
+			clas = 'Obesidade grau II'
+		} 
+		else {
+			clas = 'Obesidade grau III'
+		}
+		// Saida de dados
+		document.write(nome+' possui indice de massa corporal igual '+m+', sendo classificado como '+clas)
+
+	</script>
+</body>
+</html>	
