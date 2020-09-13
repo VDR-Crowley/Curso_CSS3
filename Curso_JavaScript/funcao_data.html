@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Funçoes para manipular datas</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+
+		// o metodo date precisa ser instaciado, ele funciona dinamicamente
+		// recuperando a data que está na maquina
+		var data = new Date()
+
+		// Função getDate() Recupera o dia
+		// Função getMonth() Recupera mes... 0 a 11, deve-se adicionar + 1
+		// Função getFullYear() Recupera o ano
+		document.write(data.getDate() +' / '+ (data.getMonth() + 1) +' / '+ data.getFullYear())
+		// metodos get servem para recuperar dados
+		// medotos set servem para setar dados
+		document.write('<hr />')
+		
+		document.write(data.toString()) // Transforma a data em string/texto
+		
+		document.write('<hr />')
+		
+		// Adicionar e remover dia
+		data.setDate(data.getDate() + 1) // - 1 remove
+		document.write(data.toString())
+
+		document.write('<hr />')
+
+		// Adicionar e remover mes
+		data.setMonth(data.getMonth() + 1) // - 1 remove
+		document.write(data.toString())
+		
+		document.write('<hr />')
+
+		// Adicionar e remover ano
+		data.setFullYear(data.getFullYear() + 1) // - 1 remove
+		document.write(data.toString())
+
+		var data1 = new Date(2020, 8, 13)
+		var data2 = new Date(2020, 11, 25)
+		
+		document.write('<hr />')
+
+		// Calcula a diferença entre as datas em millessegundos
+		var dias_de_diferenca =  Math.abs( data1.getTime() - data2.getTime() )
+
+		document.write(dias_de_diferenca)
+
+		document.write('<hr />')
+
+		// Calculando o total de millessegundos por dia
+		// 1 dia tem 24 horas, 1 hora tem 60 minutos
+		// 60 minutos tem 60 segundos, 60 segundos tem
+		// 1000 milessegundos
+		
+		var millessegundos_por_dia = (1*24*60*60*1000)
+
+		var divisao = Math.ceil(dias_de_diferenca / millessegundos_por_dia)
+
+		document.write(divisao)
+
+
+	</script>
+</body>
+</html>

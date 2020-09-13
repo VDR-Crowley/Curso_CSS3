@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		
+		// FUNÇÕES ANONIMAS E SWITCH CASE
+		// Entrada de dados
+		var numero1 = prompt('Informe um primeiro número')
+		var operacao = prompt('Informe uma operação aritmética (soma/subtração)')
+		var numero2 = prompt('Informe um segundo número')
+
+		var soma = function(n1, n2) {
+			var n1 = parseInt(n1)
+			var n2 = parseInt(n2)
+
+			document.write('O resultado é: '+(n1+n2))
+		}
+
+		var subtracao = function(n1, n2) {
+			var n1 = parseInt(n1)
+			var n2 = parseInt(n2)
+
+			document.write('O resultado é: '+(n1-n2))
+		}
+		
+		switch(operacao) {
+			case 'soma':
+				soma(numero1, numero2)
+				break
+			case 'subtração':
+				subtracao(numero1, numero2)
+				break
+			default:
+					alert('Operação não reconhecida')
+				break
+		}
+
+	/*
+		// FAZENDO COM IF E ELSE ENCADEADO
+		// Função responsaivel por fazer a soma
+		function calcularSoma(numero1, numero2) {
+			
+			var numero1 = parseInt(numero1)
+			var numero2 = parseInt(numero2)
+			
+			var resultado = numero1 + numero2
+
+			return resultado
+		}
+
+		// Função responsavel por fazer a subtração
+		function calcularSubitracao (numero1, numero2) {
+			var numero1 = parseInt(numero1)
+			var numero2 = parseInt(numero2)
+
+			var resultado = numero1 - numero2
+
+			return resultado
+		}
+
+		// Entrada de dados
+		var numero1 = prompt('Informe um primeiro número')
+		var operacao_aritimetica = prompt('Informe uma operação aritmética (soma/subtração)')
+		var numero2 = prompt('Informe um segundo número')
+
+
+		// Processamento
+		if (operacao_aritimetica === 'soma' || operacao_aritimetica === 'Soma') {
+			
+			var soma = calcularSoma(numero1, numero2)
+			// Saida
+			document.write('O resultado é: '+soma)
+			
+		} else if (operacao_aritimetica === 'subtração' || operacao_aritimetica === 'Subtração') {
+
+			var subitracao = calcularSubitracao(numero1, numero2)
+			// Saida
+			document.write('O resultado é: '+subitracao)
+
+		} else {
+			// Saida
+			alert('Operação não reconhecida!!!')
+		}
+		*/
+
+		/*
+		
+		 // DEIXANDO A FUNÇÃO CUIDAR DA OPERAÇÃO
+		function calculo(n1, n2, operacao) {
+			var n1 = parseInt(n1)
+			var n2 = parseInt(n2)
+			resultado = 0
+
+			if (operacao == 'soma') {
+				resultado = n1 + n2
+			}
+
+			if (operacao == 'subtração') {
+				resultado = n1 - n2
+			}
+
+			return resultado
+		}
+
+		var n1 = prompt('Informe um numero')
+		var n2 = prompt('Informe o segundo numero')
+		var operacao = prompt('Informe uma operacao')
+
+		document.write('O resultado é: '+calculo(n1, n2, operacao))
+		*/
+	</script>
+</body>
+</html>
