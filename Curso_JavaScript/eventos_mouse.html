@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Eventos - Mouse</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+	<div onclick="alert('teste')" style="background:#ccc; height:100px; width:100px"></div>
+	<hr>
+
+	<span>De um clique: <button onclick="ativaButton()">Clique</button></span>
+
+	<span style="margin-left:10px;">De dois clique: <button ondblclick="ativaButton()">Clique</button></span>
+	<hr>
+	<div onmouseup="alert('teste')" style="background:#ccc; height:100px; width:100px"></div>
+	<hr>
+	<div onmouseup="alert('teste')" style="background:#ccc; height:100px; width:100px"></div>
+	<hr>
+	<div onmouseout="alert('teste')" style="background:#ccc; height:100px; width:100px"></div>
+
+
+	<script>
+
+		function ativaButton() {
+			alert('Olá, clicou no botão')
+		}
+
+		function doisClickButton() {
+			alert('Você deu dois clique no botão!!')
+		}
+	</script>
+</body>
+</html>
