@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>JavaScript Manipulando DOM</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	
+		<label for="entrada"></label>
+		<input type="text" id="entrada" onkeyup="distribuiCaracter()" placeholder="digite um caracter aqui" />
+
+		<br /> <br />
+
+		<label for="apenas_letras">Letras: </label>
+		<input type="text" id="apenas_letras" disabled="disabled">
+
+		<label for="apenas_numeros">Número: </label>
+		<input type="text" id="apenas_numeros" disabled="disabled">
+	
+	<script>
+		
+		function distribuiCaracter() {
+			// Seleciona o valor digitado
+			var caracter = document.getElementById('entrada').value
+			// Limpa o campo digitado
+			document.getElementById('entrada').value = ''
+
+			// Limpa espaços em branco nas extremidades da srting
+			caracter.trim()
+
+			switch(caracter) {
+
+				case '0':
+				case '1':
+				case '2':
+				case '3':
+				case '4':
+				case '5':
+				case '6':
+				case '7':
+				case '8':
+				case '9':
+					// Adiciona o caracter no campo de referencia de numeros
+					document.getElementById('apenas_numeros').value = caracter // caso queira deixar o historico +=
+					break
+				default:
+					// Adiciona o caracter no campo de referencia de letras
+					document.getElementById('apenas_letras').value = caracter
+					 
+			}
+		}
+
+	</script>
+</body>
+</html>
