@@ -3,10 +3,35 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
+	<title>JavaScript Elementos</title>
 	<link rel="stylesheet" href="">
 </head>
 <body>
-	
+	<form>
+		<label for="name_usuario">What is your name: </label>
+		<input type="text"
+		id="name_usuario"
+		class="name_class"
+		name="name"
+		>
+		<br /> <br />
+		<label for="email_usuario">What is your e-mail: </label>
+		<input type="text"
+		id="email_usuario"
+		class="name_class"
+		name="email"
+		>
+		<br /> <br />
+		<input type="button" value="Enviar" />
+	</form>
+	<script>
+		
+		console.log(document.getElementById('name_usuario')) // retorna um identificador unico 'id'
+
+		console.log(document.getElementsByTagName('input')) // Retorna elementos com a mesma tag (HTML collection)
+		console.log(document.getElementsByClassName('name_class')) // Retorna elementos com a msm class (HTML collection)
+
+		console.log(document.getElementsByName('name')) // Retorna um node list, pega pelo atributo name 
+	</script>
 </body>
 </html>
