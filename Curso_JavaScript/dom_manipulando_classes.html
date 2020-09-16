@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>JavaScript Manipulando DOM</title>
+	<style type="text/css">
+		.estilo1 {
+			width: 150px;
+			height:50px;
+			background:red;
+			color:white;
+			padding: 40px;
+			margin-bottom:40px;
+		}
+
+		.estilo2 {
+			width: 150px;
+			height:50px;
+			background:yellow;
+			text-align:center;
+			padding: 40px;
+			margin-bottom:40px;
+		}
+
+	</style>
+</head>
+<body>
+
+
+	<br />
+
+	<div id="mensagem" class="estilo1">Modigicando classe</div>
+	<button type="button" onclick="modificaClass()">Aplicar Class</button>
+
+	<script>
+		
+		function modificaClass() {
+			document.getElementById('mensagem').className = 'estilo2'	
+		}
+
+	</script>
+</body>
+</html>
