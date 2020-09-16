@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>JavaScript Manipulando DOM</title>
+	<style type="text/css">
+		
+		h2 {
+			color:orange;
+			margin-left: 10%;
+			text-shadow: 3px 3px 4px black;
+		}
+		button {
+			margin-left: 40px;
+			margin-bottom: 20px;
+			box-shadow: 3px 2px 4px black;
+		}
+
+
+		div {
+			border:1px solid black;
+			margin:30px;
+		}
+
+		#container {
+			background: gray;
+			box-shadow: 4px 5px 10px 20px black;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="container">	
+		<h2>Manipulando Cores</h2>
+
+		<br /> <br />
+
+		<button type="button" onclick="modificaEstilo('#FF0000')">Vermelho</button>
+		<button type="button" onclick="modificaEstilo('#00FF00')">Verde</button>
+		<button type="button" onclick="modificaEstilo('#0000FF')">Azul</button>
+		<button type="button" onclick="modificaEstilo('')">Sem cor</button>
+
+
+
+		<hr>
+
+		<div style="width: 150px; height: 80px; margin-left: 10%;" id="quadrado"></div>
+	</div>
+
+	<script>
+		
+		function modificaEstilo(corDeFundo) {
+			document.getElementById('quadrado').style.backgroundColor = corDeFundo //backgroundImage came case  
+		}
+
+	</script>
+</body>
+</html>
