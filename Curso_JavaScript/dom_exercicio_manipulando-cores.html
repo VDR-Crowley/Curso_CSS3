@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Exercicio para fixar o conteudo</title>
+	<style type="text/css"></style>
+</head>
+<body>
+
+	<span>Digite: </span>
+	<input id="campo" type="text" 
+					onfocus="adicionaCampo()"
+					onblur="removeCampo()"
+					onkeyup="digitaCampo()" >
+	
+	<script>
+		// Ao focar no campo muda para a cor amarelo
+		function adicionaCampo() {
+			document.getElementById('campo').style.background = 'yellow'
+		}
+		// Ao desfocar o campo volta a ter a color normal
+		function removeCampo() {
+				var x = document.getElementById('campo').value
+				if (x.length == 0){
+					document.getElementById('campo').style.background = 'none'
+				}
+		}
+
+		function digitaCampo() {
+			// Seleciona o valor digitado
+			var valorCampo = document.getElementById('campo').value
+
+			if(valorCampo.length < 3) {
+				// ao ter 2 caracteres a cor do campo é red
+				document.getElementById('campo').style.background = 'red'
+			} else {
+				// Ao ter mais de 2 caracteres a cor do campo é ver
+				document.getElementById('campo').style.background = 'green'
+			}
+		}
+
+	</script>
+</body>
+</html>
