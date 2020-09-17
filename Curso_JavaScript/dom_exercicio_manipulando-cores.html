@@ -3,11 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Exercicio para fixar o conteudo</title>
+	<title>Ex:para fixar o conteudo DOM</title>
 	<style type="text/css"></style>
 </head>
 <body>
 
+	<h2>Exercicio praticando e manipulando cores</h2>
+	
 	<span>Digite: </span>
 	<input id="campo" type="text" 
 					onfocus="adicionaCampo()"
@@ -19,16 +21,20 @@
 		function adicionaCampo() {
 			document.getElementById('campo').style.background = 'yellow'
 		}
+		
 		// Ao desfocar o campo volta a ter a color normal
 		function removeCampo() {
-				var x = document.getElementById('campo').value
-				if (x.length == 0){
-					document.getElementById('campo').style.background = 'none'
-				}
+			// seleciona o valor digitado no campo
+			var cor_fundo = document.getElementById('campo').value
+
+			// se o campo estiver sem caracter fica com o back natural
+			if (cor_fundo.length == 0){
+				document.getElementById('campo').style.background = 'none'
+			}
 		}
 
 		function digitaCampo() {
-			// Seleciona o valor digitado
+			// Seleciona o valor digitado no campo
 			var valorCampo = document.getElementById('campo').value
 
 			if(valorCampo.length < 3) {
