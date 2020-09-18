@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Pesquisando elemento no array</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		var fruta = new Array()
+
+		fruta[1] = 'Babana'
+		fruta[2] = 'Uva'
+		fruta[3] = 'Maça'
+
+		// pesquisa o elemento dentro de um array
+		var auxiliar = fruta.indexOf('Uva')
+
+		// retorna -1 quando o elemento não existe
+		if (auxiliar === -1) {
+			console.log('Essa fruta não exites ex: ' + auxiliar)
+		} else {
+			console.log('Essa fruta existe, posição: ' + auxiliar)
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Ordenando array</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		var lista_fruta = new Array()
+
+		lista_fruta[1] = 'Manga'
+		lista_fruta[2] = 'Pera'
+		lista_fruta[3] = 'Banana'
+		lista_fruta[4] = 'Uva'
+		lista_fruta[5] = 'Maça'
+
+		console.log(lista_fruta.sort())
+
+		var lista_numero = new Array()
+
+		lista_numero[1] = 50
+		lista_numero[2] = 12
+		lista_numero[3] = 21
+		lista_numero[4] = 36
+		lista_numero[5] = 68
+		lista_numero[6] = 5
+
+		console.log(lista_numero.sort(ordenaNumero))
+
+		// função de callback pode ser usada
+		function ordenaNumero(a, b) {
+			return a - b
+			// < 0 = a ordena antes de b
+			// > 0 = b ordena antes de a
+			// == a ordem mantida
+		}
+	</script>
+</body>
+</html>
