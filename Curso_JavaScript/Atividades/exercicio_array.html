@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Ex - Manipulando Array</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+		<span>Informe um obejeto: </span>
+		<input type="text" id="objeto">
+		<button type="button" onclick="adicionaObjetos()">Adicionar</button>
+		<button type="button" onclick="ordenaObjetos()">Ordenar</button>
+
+		<script>
+
+			var objetos = new Array('Cadeira', 'Impressora', 'Garfo')
+			
+			function adicionaObjetos() {
+				// pega o objeto selecionado no input
+				var pegaObjeto = document.getElementById('objeto').value
+
+				// se input estiver vazio
+				if (pegaObjeto.length == '') {	
+					
+					alert('Informe um objeto valido!')
+				
+				} // fim if 
+				else {					
+					
+					// verifica se o objeto já existe
+					if (objetos.indexOf(pegaObjeto) > -1) {	
+						alert('Objeto já foi adicionado') 
+					}
+					// adiciona o objeto no final do array 					
+					else {
+						objetos.push(pegaObjeto)
+						console.log(objetos)
+						// limpa a caixa de texto
+						document.getElementById('objeto').value = ''
+					}
+				
+				} // fim else
+			} // fecha função
+			
+			// Função responsavel por ordenar os objetos
+			function ordenaObjetos() {
+				// sort ordena os objetos em ordem alfabetica
+				objetos.sort()
+				console.log(objetos)
+			}
+		
+		</script>
+</body>
+</html>
+
