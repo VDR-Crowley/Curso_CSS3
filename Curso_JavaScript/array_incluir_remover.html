@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Array Incluindo e removendo</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		var frutas = new Array()
+		frutas['Verduras'] = new Array()
+		frutas['Fruta'] = new Array()
+
+		// Adiciona elemento no final do array
+		frutas['Verduras'].push('Cenouras')
+		// Adiciona elemento no começo do array
+		frutas['Verduras'].unshift('Alface')
+
+		console.log(frutas['Verduras'])
+
+		frutas['Fruta'].push('Maça', 'Pera', 'Uva')
+		frutas['Fruta'].unshift('Banana')
+
+		console.log(frutas['Fruta'])
+
+		// Remove o elemento final
+		frutas['Fruta'].pop()
+
+		// Remove o elemento inicial
+		frutas['Verduras'].shift()
+
+
+	</script>
+</body>
+</html>
