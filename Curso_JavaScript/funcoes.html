@@ -6,6 +6,7 @@
 </head>
 <body>
 	<script>
+		// EXERCICIO DE CALCULO DE METROS QUADRADOS
 		function calculoAreaTotal ( largura, comprimento) {
 			
 			parseInt(largura)
@@ -22,6 +23,19 @@
 		area = calculoAreaTotal(largura, comprimento)
 
 		document.write('O terreno possui ' +area+ ' metros quadrados')
+	
+	// FUNÇÃO SOMA() PRATICANDO FOM IN USANDO ARGUMENTS
+	function soma() {
+		var resultado = null
+
+		for (var i in arguments) {
+			resultado = resultado + arguments[i]
+		}
+
+		return resultado
+	}
+
+	console.log(soma(7, 52, 70, 2.8))
 
 		/*
 		function soma (a,b) {
