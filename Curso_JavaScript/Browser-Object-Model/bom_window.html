@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Bom - Browser Object Model</title>
+
+</head>
+
+<body>
+  
+  <h2>Manipulando o BOM</h2>
+
+  <button type="button" onclick="abrirPopUp()">Abrir Janela</button>
+  <button type="button" onclick="fecharPopUp()">Fechar Janela</button>
+  <button type="button" onclick="window.print()">Imprimir pagina</button>
+  
+  <script>
+
+    var janela = Null 
+
+    function abrirPopUp() {
+      janela = window.open('https://www.youtube.com.br', 'Nova_Janela', 'width=500 height=300')
+    }
+
+    function fecharPopUp() {
+      janela.close()
+    }
+
+
+  </script>
+</body>
+
+</html>
