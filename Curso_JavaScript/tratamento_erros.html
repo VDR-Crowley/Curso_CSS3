@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tratamento de erro</title>
+
+</head>
+
+<body>
+  <script>
+
+    var video = new Array()
+
+    video[1] = new Array()
+
+    video[1]['nome'] = 'Fulmetal Alchemist'
+    video[1]['categoria'] = 'Anime' 
+
+    function getVideo(video) {
+      
+      try {
+        console.log(video[0]['nome'])
+      }
+      catch(erro) {
+        tratandoErro(erro)
+        throw new Error('Forçando erro')
+      }
+      finally {
+        console.log('Sempre passa por aqui try_catch')
+      }
+      
+      console.log('O codigo chegou ate o final')
+    }
+
+    function tratandoErro(erro) {
+      console.log('Estamos tratando o erro!')
+    }
+
+    getVideo(video)
+
+
+
+  </script>
+</body>
+
+</html>
