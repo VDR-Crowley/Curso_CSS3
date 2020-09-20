@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Bom - Browser Object Model</title>
+
+</head>
+
+<body>
+  
+  <h2>Manipulando o BOM</h2>
+  <br />
+  <button type="button" onclick="acessaPagina()">YouTube</button>
+  <button type="button" onclick="recarregaPagina()">Recarregar home</button>
+  <button type="button" onclick="replacePagina()">replace home</button>
+  <button type="button" onclick="assignPagina()">assign home</button>
+  <script>
+  
+    function acessaPagina() {
+      window.location.href = 'https://www.youtube.com.br'
+    }
+
+    function recarregaPagina() {
+      window.location.reload()
+    }
+
+    function replacePagina() {
+      window.location.replace('https://www.youtube.com.br')
+    }
+
+    function assignPagina() {
+      window.location.assign('https://www.google.com.br/')
+    }
+
+
+
+  </script>
+</body>
+
+</html>
