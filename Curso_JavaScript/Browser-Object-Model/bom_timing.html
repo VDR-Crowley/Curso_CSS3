@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Bom - Browser Object Model</title>
+
+</head>
+
+<body>
+  
+  <h2>Manipulando o BOM</h2>
+  <br />
+
+  <button type="button" onclick="bemVindo()">Bem Vindo</button>
+
+  <button type="button" onclick="contagem()">Contagem</button>
+
+
+
+
+  <script>
+  
+   function bemVindo() {
+
+    setTimeout(function() {
+      document.write('<h1>BEM VINDO AO GAME</h1>')
+    }, 1000)
+
+   }
+
+   function contagem() {
+    var i = 10
+
+    var x = setInterval(function() {
+      document.write(i + '<br/>')
+      i--
+
+      if (i < 0) {
+        clearInterval(x)
+      }
+    }, 1000)
+   }
+
+  </script>
+</body>
+
+</html>
