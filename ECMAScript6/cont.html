@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+ <html>
+	 <head>
+		 <meta charset="utf-8">
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		 <title></title>
+		 <link rel="stylesheet" href="">
+		 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	 </head>
+	 <body>
+		<div><h1>Hello World</h1></div>
+
+		<script type="text/babel">
+			// Funciona da mesma maneira do let
+			// Recomendavel usar letras maiuscula
+			// Usado muito em senhas ou link
+			// Em valores que não sofrerão alterações
+			
+			const FILME = 'Hulk'
+
+			function filmeComedia() {
+				const FILME = 'O Pequenino'
+				console.log('Escopo da função: '+FILME)
+			}
+
+			filmeComedia()
+
+			console.log(FILME)
+		</script>
+	 </body>
+ </html>
