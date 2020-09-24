@@ -1,0 +1,42 @@
+ <!DOCTYPE html>
+ <html>
+	 <head>
+		 <meta charset="utf-8">
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		 <title>Var e Let</title>
+		 <link rel="stylesheet" href="">
+		 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+	 </head>
+	 <body>
+		<div id="output"></div>
+
+		<script type="text/babel">
+			// Exemplo utilizando operador var
+			
+			var jogo = 'Gears Of War'
+			// Vale gears of war
+			console.log('Escopo bloco ainda não existe: '+jogo)
+			
+			if(true) {
+				// Muda de valor
+				var jogo = 'Halo the master chief collection'
+				console.log('Dentro do escopo bloco: '+jogo)
+			}
+			// valor é o msm do escopo bloco
+			console.log('Dentro do escopo global: '+jogo)
+
+			// Exemplo utilizando operador let
+			
+			let filme = 'Vingadores'
+
+			if(true) {
+				// tem seu valor no bloco
+				let filme = 'Matrix'
+				console.log('Dentro do escopo bloco: '+ filme) 
+			}
+			// seu valor continua do escopo global
+			console.log('Dentro do escopo global: ' + filme)
+
+		</script>
+	 </body>
+ </html>
