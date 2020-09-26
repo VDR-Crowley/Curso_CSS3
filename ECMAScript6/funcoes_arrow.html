@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+ <html>
+	 <head>
+		 <meta charset="utf-8">
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		 <title>Funções Arrow</title>
+		 <link rel="stylesheet" href="">
+		 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+	 </head>
+	 <body>
+		<div><h1>Hello World</h1></div>
+
+		<script type="text/babel">
+			
+			// Função anonima, com parametro default, ES5 
+			// let quadrado = function(x = 5) {
+			// 	return x * x
+			// }
+
+			// Arrow function ES6
+			// let quadrado = (x = 5) => {
+			//	return x * x
+			// }
+
+			// Arrow function ES6
+			let quadrado = x => x * x  // Retorno implicito
+
+			document.write( quadrado(5) + '<br>' )
+			
+			// let parOuImpar = function(numero){
+				
+			//	if(numero % 2 === 0) {
+			//		return 'Par'
+			//	} else {
+			//		return 'Ímpar'
+			//	}
+			
+			// }
+
+			// Arrow function quando recebe apenas um parametro não precisa do ()
+			// usando o operador ternario da para realizar o retorno implicito
+			// diminuindo a verbosidade do codigo
+			let parOuImpar = numero =>  numero % 2 === 0 ? 'Par' : 'Ímpar'
+
+			document.write(parOuImpar(5))			
+		</script>
+
+	 </body>
+ </html>
