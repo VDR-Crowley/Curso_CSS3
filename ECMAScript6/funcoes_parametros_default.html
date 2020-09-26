@@ -11,24 +11,14 @@
 		<div><h1>Hello World</h1></div>
 
 		<script type="text/babel">
-			// Template string, interpolação
-			// ou concatenação de string 
 			
-			let nome = 'Vando'
-
-			console.log(`
-				Hello ${nome},
-				Tudo Bem? 
-				`)
-
-			console.log(`Primeira Soma: 7 x 7 = ${7*7}`)
-
-			function calcular(x, y) {
-				return x * y
+			function contaUmHistoria(personagem = 'Simon', atividade = 'correr no parque', nome_dono = 'Vando') {
+				document.write(`Era uma vez um ${personagem}, que adorava ${atividade} com seu dono chamado ${nome_dono}, juntos viveram felizes para sempre.`)
 			}
 
-			console.log(`Segunda Soma: 7 X 9 = ${calcular(7, 9)}`)
+			contaUmHistoria(undefined, undefined, undefined)
 			
 		</script>
+
 	 </body>
  </html>

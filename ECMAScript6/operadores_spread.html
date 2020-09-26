@@ -11,23 +11,14 @@
 		<div><h1>Hello World</h1></div>
 
 		<script type="text/babel">
-			// Template string, interpolação
-			// ou concatenação de string 
 			
-			let nome = 'Vando'
+			let filmes = ['Vingadores', 'The Batman', 'Liga da Justiça']
+			let series = ['tow and half man', 'The 100', 'Green Arrow']
+			let animes = ['Naruto', 'Dragon ball Z', 'Fullmetal Alchemist']
 
-			console.log(`
-				Hello ${nome},
-				Tudo Bem? 
-				`)
+			let todos = [...animes, ...filmes, ...series]
 
-			console.log(`Primeira Soma: 7 x 7 = ${7*7}`)
-
-			function calcular(x, y) {
-				return x * y
-			}
-
-			console.log(`Segunda Soma: 7 X 9 = ${calcular(7, 9)}`)
+			console.log(todos)
 			
 		</script>
 	 </body>
