@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+ <html>
+	 <head>
+		 <meta charset="utf-8">
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		 <title>OO - Orientação a Objetos</title>
+		 <link rel="stylesheet" href="">
+		 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+	 </head>
+	 <body>
+		<div><h1>Hello World</h1></div>
+
+		<script type="text/babel">
+		
+		// Modelo do Objeto
+		class ContaBancaria {
+			//agencia
+			//numeroConta
+			//saldo
+			//limite
+			constructor() {
+				this.agencia = 323
+				this.numeroConta = 4568561
+				this.saldo = 1100
+				this.limite = 2500
+			}
+
+			depositar(valorDepositado) {
+				this.saldo += valorDepositado
+			}
+
+			sacar(valorSaque) {
+				this.saldo -= valorSaque
+			}
+
+			consultarSaldo() {
+				return this.saldo
+			}
+
+		}
+
+		let x = new ContaBancaria()
+
+		console.log( x.consultarSaldo() )
+
+		x.depositar(649)
+
+		console.log( x.consultarSaldo() )
+
+		x.sacar(1100)
+
+		console.log( x.consultarSaldo() )	
+			
+		</script>
+
+	 </body>
+ </html>
