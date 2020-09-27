@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>OO - Pilar Encapsulamento</title>
+		<link rel="stylesheet" href="">
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+	</head>
+	<body>
+		<div><h1>Hello World</h1></div>
+
+		<script type="text/babel">
+			// Pilar encapsulamento
+			// Seguro
+			// Reutilizável	
+			
+			class Tv {
+				//  _ Convenção para atributos no javascript
+				//  indica que é necessario acessar esse atributo
+				//  pelo getter ou setter
+				constructor() {
+					this._relacaoCanais = Array(2, 4, 5, 7, 10)
+					this._canalAtivo = 5
+					this._volume
+				}
+
+				// getters setters
+				// Tecnica de pseudo de variaveis
+				// metodos que recupera e atualiza atributos
+				get canalAtivo() {
+					return this._canalAtivo
+				}
+
+				set canalAtivo(canal) {
+					if(this._relacaoCanais.indexOf(canal) !== -1) {
+						this._canalAtivo = canal
+					}
+				}
+
+			}
+
+			let tv = new Tv()
+
+			tv.canalAtivo = 11
+
+			console.log(tv.canalAtivo)
+
+		
+		</script>
+
+	</body>
+</html>
