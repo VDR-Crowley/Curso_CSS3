@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>For each</title>
-	<link rel="stylesheet" href="">
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+
+
+  <script>
+    // var listaFuncionarios = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda']
+    var listaFuncionarios = Array()
+    listaFuncionarios['x'] = 'Viviane'
+    listaFuncionarios[false] = 'Rosângela'
+    listaFuncionarios[3] = 'Miguel'
+    listaFuncionarios[27] = 'Lucas'
+    listaFuncionarios[-12] = 'Fernanda'
+    //forEach começa a partir de 0 (cuidado!!!)
+
+    var f = function(valor, indice){
+      console.log(valor, indice)
+    }
+
+    listaFuncionarios.forEach(f)
+    /* listaFuncionarios.forEach(function(valor, indice, array) {
+      //logica
+      console.log('indice ' + indice + ' | valor:' + valor)
+      if(valor === 'Lucas'){
+        array[indice] = 'Um novo valor'
+      }
+      console.log(array)
+    }) */
+  </script>
+
 </head>
+
 <body>
-	<script>
-
-		var lista_pessoas = ['Vando', 'Vinicius', 'Viviane', 'Cardoso', 'Claudia']
-		lista_pessoas['a'] = 'Andre'
-
-		// recupera o indice do arrey
-		for(var p in lista_pessoas) {
-			document.write('Indice: '+ p + ' Valor: '+lista_pessoas[p]+ '<br>')
-		}
-
-	</script>	
 </body>
+
 </html>

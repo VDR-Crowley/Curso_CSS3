@@ -117,24 +117,23 @@
       sofas['sofasCama'].push(new Sofa(8, 0, 6,true, true, 'Estampado', 'Vermelho'))
       sofas['sofasCama'].push(new Sofa(4, 2, 2,true, true, 'Couro', 'Branco'))
       
-      // Chama a funcao sofaCama
-      sofas['sofasCama'][0].sofaCama()
-      sofas['sofasCama'][1].sofaCama()
-      sofas['sofasCama'][2].sofaCama()
-
-      console.log(sofas['sofasCama'][0], sofas['sofasCama'][1], sofas['sofasCama'][2])
-
       // Não sofa cama
       sofas['naoCama'].push(new Sofa(6, 0, 5, false, false, 'Estampado', 'Cinza'))
       sofas['naoCama'].push(new Sofa(2, 2, 3, false, false, 'Couro', 'Preto'))
-     
-      // Chama a funcao sofaCama 
-      sofas['naoCama'][0].sofaCama()
-      sofas['naoCama'][1].sofaCama()
-
-
-      console.log(sofas['naoCama'][0], sofas['naoCama'][1])
-
+      
+      // Percorrendo o array
+      for(var p in sofas['sofasCama']) {
+        // Chama função sofaCama
+        sofas['sofasCama'][p].sofaCama()
+        console.log(sofas['sofasCama'][p])
+      }
+      // Percorrendo o array
+      for(var p in sofas['naoCama']) {
+        // Chama função sofaCama
+        sofas['naoCama'][p].sofaCama()
+        console.log(sofas['naoCama'][p])
+      }
+      
     </script>
 </body>
 
