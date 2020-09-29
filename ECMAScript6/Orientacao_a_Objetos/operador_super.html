@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OO - Operador super</title>
+    <meta charset="utf-8">
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <script type="text/babel">
+
+      class Animal {
+        constructor(cor, tamanho, peso) {
+          this.cor = cor
+          this.tamanho = tamanho
+          this.peso = peso
+        }
+
+        dormir() {
+          console.log('Dormir')
+        }
+      }
+        // Todo class que tiver o extends devem usar o operador super
+        // pois estão extendendo e herdando metodos de outras class
+        // o super da acesso para o construtor de outra class  
+      /*class Cachorro extends Animal {
+        constructor(){
+          super(cor, tamanho, peso)
+          this.orelhas = null
+        }
+
+        correr() {
+          console.log('Correr')
+        }
+
+        rosnar() {
+          console.log('Rosnar')
+        }
+      }
+      */
+      class Passaro extends Animal {
+        constructor(bico, cor, tamanho, peso) {
+          super(cor, tamanho, peso)
+          this.bico = bico
+        }
+
+        voar() {
+          console.log('Voar')
+        }
+
+      }
+
+      class Papagaio extends Passaro {
+        constructor(bico, sabeFalar, cor, tamanho, peso) {
+          super(bico, cor, tamanho, peso)
+          this.sabeFalar = sabeFalar
+        }
+
+        falar() {
+          console.log('Falar')
+        }
+      }
+
+
+      let papagaio = new Papagaio('Medio', true, 'Verde', 350, 30)
+
+
+      console.log(papagaio)
+
+    </script>
+    
+  </head>
+  <body>
+    <div id="output"></div>
+  </body>
+</html>
