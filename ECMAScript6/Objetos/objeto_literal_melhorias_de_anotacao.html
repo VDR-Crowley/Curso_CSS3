@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Objetos literais</title>
+    <meta charset="utf-8">
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    
+</head>
+
+<body>
+    <div id="output"></div>
+
+    <script type="text/babel">
+       
+       let nome = 'Vando'
+       let idade = 19
+       let sexo = 'Masculino'
+       let profissao = 'Programador'
+
+       let objeto = {
+        nome,
+        idade,
+        sexo,
+        profissao,
+        exibirResumo() {
+          console.log(`
+            ${this.nome}, 
+            ${this.idade} anos, 
+            ${this.sexo} 
+            trabalha como ${this.profissao}`)
+          }
+        }
+
+        console.log(objeto)
+        objeto.exibirResumo()
+    </script>
+</body>
+
+</html>
