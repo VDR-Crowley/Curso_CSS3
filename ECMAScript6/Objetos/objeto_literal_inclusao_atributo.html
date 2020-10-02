@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Objetos literais</title>
+  <meta charset="utf-8">
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>    
+</head>
+
+<body>
+  <div id="output"></div>
+
+  <script type="text/babel">
+    let pessoas = {
+      nome: 'Vivi',
+      idade: 24
+    }
+
+    console.log(pessoas)
+
+    pessoas.sexo = 'Feminino'
+
+    pessoas.hello = () => console.log('hello world')
+
+    console.log(pessoas)
+
+    pessoas.hello()
+
+      
+  </script>
+    
+</body>
+
+</html>
