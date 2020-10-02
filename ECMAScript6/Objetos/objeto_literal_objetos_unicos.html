@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Objetos literais</title>
+  <meta charset="utf-8">
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>    
+</head>
+
+<body>
+  <div id="output"></div>
+
+  <script type="text/babel">
+    
+    let assinatura = {
+      idCliente : 1000,
+      descricao : 'Acesso a intenet',
+      status() {
+        console.log('Ativo')
+      }
+    }
+
+    console.log(assinatura.descricao)
+
+    // y nao vai receber os objetos assinatura
+    // mas sim ganhar a permissao de acessar os
+    // objetos
+    let y = assinatura
+
+    console.log(y.descricao)
+
+    y.descricao = 'Tv + Internet + Game Pass'
+
+    console.log(assinatura.descricao)
+    console.log(y.descricao)
+      
+  </script>
+    
+</body>
+
+</html>
