@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Objetos literais</title>
+  <meta charset="utf-8">
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>    
+</head>
+
+<body>
+  <div id="output"></div>
+
+  <script type="text/babel">
+    let pessoas = {
+      nome: 'Vando Dos Reis',
+      idade: 19
+    }     
+
+    console.log(pessoas.nome)
+    console.log(pessoas.idade)
+
+    console.log('Valor Do Objeto sendo modificado')
+
+    pessoas.nome = 'Vinicius Dos Reis'
+    pessoas.idade = 26
+
+    console.log(pessoas.nome)
+    console.log(pessoas.idade)
+      
+  </script>
+</body>
+
+</html>
