@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Objetos literais</title>
+  <meta charset="utf-8">
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>    
+</head>
+
+<body>
+  <div id="output"></div>
+
+  <script type="text/babel">
+    
+    let a1 = {
+      cor: 'Laranja',
+      modelo: 'airbus a155',
+      levantaVoo() {
+        console.log('Levantando voo')
+      }
+    }
+
+
+    let aviaoF = function() {
+      this.cor = 'Branco'
+      this.modelo = 'Boeing 787'
+      this.levantarVoo = function(){
+        console.log('Levantando Voo')
+      }
+    }
+
+    let a2 = new aviaoF()
+
+    class aviaoC {
+      constructor() {
+        this.cor = 'Vermelho'
+        this.modelo = 'Embrar E-jets'
+      }
+
+      levantaVoo() {
+        console.log('Levantando Voo')
+      }
+    }
+
+    let a3 = new aviaoC()
+
+    console.log(a1) 
+    console.log(a2) 
+    console.log(a3) 
+  </script>
+    
+    
+</body>
+
+</html>
