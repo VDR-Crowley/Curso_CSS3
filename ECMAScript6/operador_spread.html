@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Operador Spread</title>
+  <meta charset="utf-8">
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>    
+</head>
+
+<body>
+  <div id="output"></div>
+
+  <script type="text/babel">
+    
+    // analisando o contexto do spread
+    
+    // String
+    let tituloArtigo = 'Como utilizar o rest/spread'
+
+    console.log(tituloArtigo)
+    console.log(...tituloArtigo)
+    console.log([...tituloArtigo])
+
+    // Array
+    let listaCursos1 = ['Desenvolvimento Web', 'Java Completo']
+    let listaCursos2 = ['Hackers Eticos', 'Linguagem C']
+    let listaDeCursosCompletas = ['Html5', ...listaCursos1, ...listaCursos2, 'SQL Completo']
+
+    console.log(listaDeCursosCompletas)
+
+    // Objetos
+    
+    let pessoa = { nome : 'Vando Dos Reis', idade : 19 }
+    let clone = { endereco : 'Silvestre da conceição', ...pessoa }
+
+    console.log(clone)
+  </script>
+    
+    
+</body>
+
+</html>
