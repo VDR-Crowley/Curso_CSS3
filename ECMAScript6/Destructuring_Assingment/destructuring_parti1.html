@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+ <html>
+	 <head>
+		 <meta charset="utf-8">
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		 <title>Destructuring_Assingment</title>
+		 <link rel="stylesheet" href="">
+		 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+	 </head>
+	 <body>
+		<div><h1>Hello World</h1></div>
+
+		<script type="text/babel">
+			
+			let frutas = ['Abacaxi', 'melão', 'banana', 'maça']
+			//let [ a, b, , c ] = frutas // Pula um indice
+			//console.log(a, b, c)
+
+			let [ a, b, c, d, e = 'mamão' ] = frutas
+
+			console.log(a, b, c, d, e)
+
+			let coisas = [ ['Abacaxi', 'melão','pera', 'banana', 'maça'], [ 'Vando', 'vitor'] ]
+			//let [,[,n2]] = coisas
+			
+			let [[,,pera],] = coisas // recuperando pera
+			console.log(pera)
+
+			
+		</script>
+	 </body>
+ </html>
